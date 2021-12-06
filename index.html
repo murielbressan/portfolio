@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/zorro.png" />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="
+        navbar navbar-dark navbar-expand-lg
+        sticky-top
+        navbar-fixed-top
+        scrolled gradiente
+      "
+      id="main-navbar"
+    >
+      <div class="container-fluid">
+        <div class="col-2 col-lg-2 col-md-2">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/zorro.png" alt="logo" width="40" />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+              <li class="navitem"><a class="nav-link" href="#">HOME</a></li>
+              <li class="navitem">
+                <a class="nav-link" href="#aboutus" target="_self">ABOUT US</a>
+              </li>
+              <li class="navitem">
+                <a class="nav-link" href="#projects">PROJECTS</a>
+              </li>
+              <li class="nav-item col position-relative">
+                <a class="nav-link" href="#contacto"> CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2-col-md-2 col-lg-2"></div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="webdesign-div">
+        <h2>WEB DESIGN</h2>
+        <h5>Based in Mendoza</h5>
+      </div>
+    </header>
+
+    <section class="pt-5" id="aboutus">
+      <div class="segunda-seccion scroll-container js-scroll fade-in-bottom">
+        <div class="container scroll-element js-scroll fade-in-bottom">
+          <div class="row">
+            <div class="personitas col-sm-12 col-md-4"></div>
+            <div class="col-sm-12 col-md-6 align-items-center aboutus-div">
+              <div class="row">
+              <div class="col-12">
+              <h2 class="aboutus">ABOUT US</h2>
+
+            </div>
+              <div class="aboutus col-12 ">
+              <p>
+                We are Muriel and Santiago, a team of front-end and back-end developers from Mendoza, we dedicate to create interactive and modern web pages, always thinking about current trends and accessibility.
+              </p>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scroll-container tercera-seccion" id="projects">
+      <div class="scroll-element js-scroll fade-in-bottom">
+        <h2 class="trabajos">PROJECTS</h2>
+      </div>
+      <div class="container logos scroll-element js-scroll fade-in-bottom">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-3">
+            <a href="">
+              <img class="logoapex logoscale" src="./assets/apex.png" alt="APEX"
+            /></a>
+          </div>
+          <div class="col-lg-3">
+            <a href="https://www.nsaseguros.com/" target="_blank">
+              <img
+                class="logonsa logoscale"
+                src="./assets/nsa_original.png"
+                alt="NSA SEGUROS"
+            /></a>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container contacto">
+        <div class="row mt-4">
+          <div class="col-md-5 margen-lista">
+            <div class="row">
+              <div class="col-12 ">
+                <ul class="list-unstyled ">
+                  <li>
+                    <img
+                      class="logoscontacto float-start"
+                      src="./assets/whatsapp.png"
+                      alt="whatsapp"
+                    />
+                    <a class="links" href="tel:+542612519203" target="_blank"
+                      >+54 9 2612 51-9203</a
+                    >
+                    <br />
+                    <a class="links" href="tel:+542615776746" target="_blank"
+                      >+54 9 261 577-6746</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="list-unstyled">
+                  <li>
+                    <img
+                    class="logoscontacto float-start"
+                    src="./assets/linkedin.png"
+                    alt="whatsapp"
+                  />
+                  <a class="links" href="https://www.linkedin.com/in/santiago-pulido-3b0894201/" target="_blank"
+                    >Santiago Pulido</a
+                  >
+                  <br />
+                  <a class="links" href="https://www.linkedin.com/in/muriel-bressan/" target="_blank"
+                    >Muriel Bressan</a
+                  >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br />
+          </div>
+        
+          <div class="col-md-6">
+            <form class="contact-form row" action="email.php" method="post">
+              <div class="form-field col-lg-12 form-floating">
+                <input
+                  id="name"
+                  class="input-text js-input"
+                  type="text"
+                  name="name"
+                  placeholder="NOMBRE"
+                  required
+                />
+                <label class="sr-only" for="name"></label>
+              </div>
+              <div class="form-field col-lg-6 form-floating">
+                <input
+                  type="text"
+                  name="email"
+                  class="input-text js-input"
+                  placeholder="E-MAIL"
+                  required
+                />
+                <label class="sr-only" for="email"></label>
+              </div>
+              <div class="form-field col-lg-6 form-floating">
+                <input
+                  id="telefono"
+                  name="telefono"
+                  class="input-text js-input"
+                  type="text"
+                  placeholder="TELEFONO"
+                  required
+                />
+                <label class="sr-only" for="telefono"></label>
+              </div>
+              <div class="form-field col-lg-12 form-floating">
+                <input
+                  id="message"
+                  name="message"
+                  class="input-text js-input"
+                  type="text"
+                  placeholder="MENSAJE"
+                  required
+                />
+                <label class="sr-only" for="message"></label>
+              </div>
+              <div
+                class="
+                  form-field
+                  col-lg-12
+                  form-floating
+                  align-items-center
+                  mx-auto
+                "
+              >
+                <input
+                  class="button submit-btn"
+                  type="submit"
+                  name="submit"
+                  value="ENVIAR"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h5 class="foot">POWERED BY MURIEL BRESSAN</h5>
+    </footer>
+  </body>
+  <script>
+    $(window).scroll(function () {
+      var nav = $("#main-navbar");
+      var top = 200;
+      if ($(window).scrollTop() >= top) {
+        nav.addClass("bg-black");
+      } else {
+        nav.removeClass("bg-black");
+      }
+    });
+  </script>
+  <script src="./script/script.js"></script>
+</html>
