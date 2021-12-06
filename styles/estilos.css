@@ -9,29 +9,31 @@ body {
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 /* body {
   width: 100%;
   height:100%;
 } */
 
-body, .contacto{
-  
-    background: linear-gradient(-45deg,  #f88480,#4a60eb,#5675c6);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+body,
+.contacto {
+  background: linear-gradient(-45deg, #f88480, #4a60eb, #5675c6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .nav-link {
@@ -43,7 +45,7 @@ body, .contacto{
   font-size: 1.3rem;
   margin: 1rem;
 }
-nav ul{
+nav ul {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -53,16 +55,16 @@ nav ul{
   color: #2955c4 !important;
 }
 
-.navbar{
+.navbar {
   transition: background-color 0.5s;
 }
 
-.navbar::after{
-  background-color: black;
+.navbar::after {
+  background-color: transparent;
 }
 
 nav button {
-  background-color: #0e0e0e;
+  background-color: transparent;
   color: #5675c6;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
@@ -82,7 +84,6 @@ header {
   min-height: 94vh;
 }
 
-
 header h2 {
   font-family: "Raleway", sans-serif;
   font-size: 10vh;
@@ -94,15 +95,14 @@ header h5 {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
 }
-.segunda-seccion{
+.segunda-seccion {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; 
-  height: 50vh; 
+  width: 100%;
+  height: 50vh;
   background-color: #16276c;
-
 }
 .personitas {
   background-image: url(../assets/g14.png);
@@ -130,11 +130,11 @@ header h5 {
   margin-top: 1rem;
   letter-spacing: 0.1rem;
 }
-.aboutus-div h2{
+.aboutus-div h2 {
   letter-spacing: 0.5rem;
   font-weight: 800;
 }
-.tercera-seccion{
+.tercera-seccion {
   background-color: #0e0e0e;
   height: 70vh;
   align-items: center !important;
@@ -149,10 +149,10 @@ header h5 {
   font-family: "Bebas Neue", cursive;
   font-size: 4rem !important;
   letter-spacing: 0.5rem;
- 
+
   line-height: 20vh;
 }
-.divtrabajos{
+.divtrabajos {
   text-align: center;
   align-items: center;
   margin-left: auto;
@@ -161,24 +161,22 @@ header h5 {
 .logoapex {
   width: 15rem;
   margin-right: 2rem;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-.logoscale:hover{
+.logoscale:hover {
   transform: scale(1.1);
 }
 .logonsa {
   width: 10rem;
-  
-  transition: transform .2s;
-}
 
+  transition: transform 0.2s;
+}
 
 .logos {
   text-align: center;
 }
 
 .contacto {
-  
   background-color: #5676c685;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -190,7 +188,7 @@ header h5 {
   color: white;
   margin-left: 1rem;
 }
-.links:hover{
+.links:hover {
   color: #bbdaf3;
 }
 .logoscontacto {
@@ -198,7 +196,7 @@ header h5 {
   /* align-content: left; */
 }
 
-.margen-lista{
+.margen-lista {
   margin-left: 1rem;
 }
 
@@ -270,7 +268,7 @@ select:-webkit-autofill:focus {
 }
 
 /*FOOTER*/
-footer{
+footer {
   background-color: #0e0e0e;
 }
 .foot {
@@ -292,18 +290,18 @@ footer{
   font-size: 1rem !important;
   padding: 20px;
 }
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .personitas {
     height: 1rem;
     min-height: 3rem;
     padding: 5rem;
     background-position-y: center;
-    background-position-x:  center;
+    background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 10rem;
   }
-  .segunda-seccion{
+  .segunda-seccion {
     height: 75vh;
   }
   .aboutus-div h2 {
@@ -311,23 +309,32 @@ footer{
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
+  body{
+    width: 100%;
+    
+    margin: 0%;
+    padding: 0%;
+  }
+  .zorro {
+    width: 2rem;
+  }
   .personitas {
     height: 1rem;
     min-height: 3rem;
     padding: 5rem;
     background-size: 10rem;
   }
-  .segunda-seccion{
+  .segunda-seccion {
     height: 75vh;
   }
   .aboutus {
     margin-top: 3rem;
   }
-  .logoapex{
+  .logoapex {
     margin: 2rem;
   }
-  .logonsa{
+  .logonsa {
     margin: 2rem;
   }
   .logoscontacto {
