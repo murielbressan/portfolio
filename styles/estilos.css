@@ -19,9 +19,9 @@ body {
 
 body,
 .contacto {
-  background: linear-gradient(-45deg, #f88480, #4a60eb, #5675c6);
+  background: linear-gradient(-40deg, #584e94, #364a83, #000208);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
@@ -136,8 +136,7 @@ header h5 {
 }
 .tercera-seccion {
   background-color: #0e0e0e;
-  height: 70vh;
-  align-items: center !important;
+   align-items: center !important;
   text-align: center !important;
 }
 .trabajos {
@@ -163,6 +162,11 @@ header h5 {
   margin-right: 2rem;
   transition: transform 0.2s;
 }
+.logosanti {
+  width: 5rem;
+  margin-right: 1rem;
+  transition: transform 0.2s;
+}
 .logoscale:hover {
   transform: scale(1.1);
 }
@@ -178,8 +182,6 @@ header h5 {
 
 .contacto {
   background-color: #5676c685;
-  margin-left: 5rem;
-  margin-right: 5rem;
   text-decoration: none;
 }
 
@@ -278,7 +280,6 @@ footer {
   align-items: center;
   margin-bottom: 0%;
   text-align: center;
-  margin-top: 1rem;
   background-color: #252525;
   color: #e8eefd;
   font-family: "Montserrat", sans-serif;
@@ -289,6 +290,11 @@ footer {
   margin-bottom: 0%;
   font-size: 1rem !important;
   padding: 20px;
+}
+@media (min-width: 980px){
+  .tercera-seccion{
+    height: 70vh;
+  }
 }
 @media (max-width: 992px) {
   .personitas {
@@ -301,6 +307,8 @@ footer {
     background-attachment: scroll;
     background-size: 10rem;
   }
+
+
   .segunda-seccion {
     height: 75vh;
   }
@@ -316,6 +324,7 @@ footer {
     margin: 0%;
     padding: 0%;
   }
+  
   .zorro {
     width: 2rem;
   }
