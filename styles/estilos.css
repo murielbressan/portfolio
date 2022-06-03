@@ -19,7 +19,7 @@ body {
 
 body,
 .contacto {
-  background: linear-gradient(-40deg, #171330, #44356b, #000208);
+  background: linear-gradient(-40deg, #4a408b, #000000, #4e69b9);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }
